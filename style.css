@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    background: repeating-linear-gradient(90deg, hsla(240, 0%, 35%, 0.05) 0px, hsla(240, 0%, 35%, 0.05) 1px, transparent 1px, transparent 91px), repeating-linear-gradient(45deg, hsla(240, 0%, 35%, 0.05) 0px, hsla(240, 0%, 35%, 0.05) 1px, transparent 1px, transparent 91px), repeating-linear-gradient(0deg, hsla(240, 0%, 35%, 0.05) 0px, hsla(240, 0%, 35%, 0.05) 1px, transparent 1px, transparent 61px), repeating-linear-gradient(90deg, hsla(240, 0%, 35%, 0.05) 0px, hsla(240, 0%, 35%, 0.05) 1px, transparent 1px, transparent 61px), repeating-linear-gradient(90deg, hsla(240, 0%, 35%, 0.05) 0px, hsla(240, 0%, 35%, 0.05) 1px, transparent 1px, transparent 16px), repeating-linear-gradient(0deg, hsla(240, 0%, 35%, 0.05) 0px, hsla(240, 0%, 35%, 0.05) 1px, transparent 1px, transparent 16px), linear-gradient(90deg, hsl(83, 8%, 8%), hsl(83, 8%, 8%));
+    ;
+    ;
+    overflow: hidden;
+}
+
+.landing {
+    position: relative;
+    background-image: linear-gradient(0, 0, 0, 0.3), url('../img/git.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.landing-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.landing h1 {
+    font-size: 50px;
+}
+
+.landing p {
+    font-size: 20px;
+}
+
+.countdown {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown div {
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 5px;
+    opacity: 0.6;
+    background: #000;
+}
+
+.countdown div:first-child {
+    background: rgb(44, 216, 193);
+}
+
+.countdown span {
+    display: block;
+    font-size: 25px;
+}
+
+@media(max-width: 650px) {
+    .landing img {
+        width: 70%;
+    }
+    .landing h1 {
+        font-size: 40px;
+    }
+    .countdown {
+        font-size: 30px;
+        flex-direction: column;
+    }
+    .countdown div {
+        display: none;
+    }
+    .countdown div:first-child {
+        display: block;
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+@media(max-height: 600px) {
+    img {
+        width: 20%
+    }
+    p {
+        display: none;
+    }
+}
+
+@media (max-height: 400px) {
+    img {
+        padding-bottom: 30px;
+    }
+    h1 {
+        display: none;
+    }
+}
